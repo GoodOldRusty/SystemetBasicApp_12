@@ -15,8 +15,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -39,53 +37,50 @@ public class MainActivity extends AppCompatActivity {
   private ListView listView;
   private ArrayAdapter<Product> adapter;
 
-
-  private static final String MIN_ALCO = "min_alcohol";
+  private static final String MIN_ALCO = "min_";
   private static final String MAX_ALCO = "max_alcohol";
   private static final String MIN_PRICE = "min_price";
   private static final String MAX_PRICE = "max_price";
   private static final String TYPE = "product_group";
   private static final String NAME = "name";
 
+
   private void createFakedProducts() {
     products = new ArrayList<>();
     Product p1 = new Product.Builder()
-        .alcohol(4.4)
-        .name("Pilsner Urquell")
-        .nr(1234)
-        .productGroup("Öl")
-        .type("Öl")
-        .volume(330).build();
+            .alcohol(4.4)
+            .name("Pilsner Urquell")
+            .nr(1234)
+            .productGroup("Öl")
+            .type("Öl")
+            .volume(330).build();
     Product p2 = new Product.Builder()
-        .alcohol(4.4)
-        .name("Baron Trenk")
-        .nr(1234)
-        .productGroup("Öl")
-        .type("Öl")
-        .volume(330).build();
+            .alcohol(4.4)
+            .name("Baron Trenk")
+            .nr(1234)
+            .productGroup("Öl")
+            .type("Öl")
+            .volume(330).build();
     products.add(p1);
     products.add(p2);
   }
 
-  private void setupTextView() {
-    TextView textView = findViewById(R.id.text_view_id);
-    
-  }
+
   private void setupListView() {
     // look up a reference to the ListView object
     listView = findViewById(R.id.product_list);
 
     // create an adapter (with the faked products)
     adapter = new ArrayAdapter<Product>(this,
-        android.R.layout.simple_list_item_1,
-        products);
+            android.R.layout.simple_list_item_1,
+            products);
 
     listView.setOnItemClickListener(new ListView.OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> parent,
-          final View view,
-          int position /*The position of the view in the adapter.*/,
-          long id /* The row id of the item that was clicked */) {
+                              final View view,
+                              int position /*The position of the view in the adapter.*/,
+                              long id /* The row id of the item that was clicked */) {
         Log.d(LOG_TAG, "item clicked, pos:" + position + " id: " + id);
 
         Product p = products.get(position);
@@ -141,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle("Search products");
     final View viewInflated = LayoutInflater
-        .from(this).inflate(R.layout.search_dialog, null);
+            .from(this).inflate(R.layout.search_dialog, null);
 
     builder.setView(viewInflated);
 
@@ -183,9 +178,9 @@ public class MainActivity extends AppCompatActivity {
       // If first arg use "?", otherwise use "&"
       // E g:    ?min_alcohol=4.4&max_alcohol=5.4
       argumentString += (argumentString.equals("")?"?":"&")
-          + entry.getKey()
-          + "="
-          + entry.getValue();
+              + entry.getKey()
+              + "="
+              + entry.getValue();
     }
     // print argument
     Log.d(LOG_TAG, " arguments: " + argumentString);
@@ -194,19 +189,19 @@ public class MainActivity extends AppCompatActivity {
     String url = "http://rameau.sandklef.com:9090/search/products/all/" + argumentString;
     Log.d(LOG_TAG, "Searching using url: " + url);
     JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
-        Request.Method.GET,
-        url,
-        null,
-        new Response.Listener<JSONArray>() {
+            Request.Method.GET,
+            url,
+            null,
+            new Response.Listener<JSONArray>() {
 
-          @Override
-          public void onResponse(JSONArray array) {
-            Log.d(LOG_TAG, "onResponse()");
-            products.clear();
-            products.addAll(jsonToProducts(array));
-            adapter.notifyDataSetChanged();
-          }
-        }, new Response.ErrorListener() {
+              @Override
+              public void onResponse(JSONArray array) {
+                Log.d(LOG_TAG, "onResponse()");
+                products.clear();
+                products.addAll(jsonToProducts(array));
+                adapter.notifyDataSetChanged();
+              }
+            }, new Response.ErrorListener() {
 
       @Override
       public void onErrorResponse(VolleyError error) {
@@ -243,16 +238,13 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    
     setContentView(R.layout.activity_main);
-    
+
     // set up faked products
     createFakedProducts();
 
 
     // setup listview (and friends)
     setupListView();
-    
-
   }
 }
