@@ -6,16 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-  <TextView android:id="@+id/simpleTextView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="AbhiAndroid" />
 
   <ListView
+      android:id="@+id/product_list"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:id="@+id/product_list">
-  </ListView>
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="16dp"></ListView>
+
+
 
 
 </android.support.constraint.ConstraintLayout>
