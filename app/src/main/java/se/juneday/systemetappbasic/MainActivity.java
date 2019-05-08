@@ -15,6 +15,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -37,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
   private ListView listView;
   private ArrayAdapter<Product> adapter;
 
+
   private static final String MIN_ALCO = "min_alcohol";
   private static final String MAX_ALCO = "max_alcohol";
   private static final String MIN_PRICE = "min_price";
   private static final String MAX_PRICE = "max_price";
   private static final String TYPE = "product_group";
   private static final String NAME = "name";
-
 
   private void createFakedProducts() {
     products = new ArrayList<>();
@@ -65,7 +67,10 @@ public class MainActivity extends AppCompatActivity {
     products.add(p2);
   }
 
-
+  private void setupTextView() {
+    TextView textView = findViewById(R.id.text_view_id);
+    
+  }
   private void setupListView() {
     // look up a reference to the ListView object
     listView = findViewById(R.id.product_list);
@@ -238,13 +243,16 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    
     setContentView(R.layout.activity_main);
-
+    
     // set up faked products
     createFakedProducts();
 
 
     // setup listview (and friends)
     setupListView();
+    
+
   }
 }
