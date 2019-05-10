@@ -1,5 +1,6 @@
 package se.juneday.systemetappbasic;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,14 +21,15 @@ public class LoginActivity extends AppCompatActivity {
         yesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            Intent test = new Intent (LoginActivity.this, MainActivity.class);
+            startActivity(test);
             }
         });
 
         noButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                System.exit(1);
             }
         });
 
