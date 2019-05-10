@@ -1,3 +1,8 @@
 <resources>
   <string name="app_name">SystemetAppBasic</string>
+  <string name="age_control">Är du 20 år eller äldre?</string>
+  <string name="yes_answer">JA</string>
+  <string name="no_answer">NEJ</string>
+  <string name="login_activity">SystemetAppBasic</string>
+
 </resources>
