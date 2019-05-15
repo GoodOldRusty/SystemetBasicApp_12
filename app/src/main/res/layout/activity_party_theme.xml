@@ -7,80 +7,76 @@
     tools:context=".PartyTheme">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <Button
         android:id="@+id/new_year_party_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="215dp"
         android:text="@string/new_year_party_theme"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/park_party_button" />
 
-        <Button
+    <Button
         android:id="@+id/exam_party_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/exam_party_theme"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="84dp" />
+        app:layout_constraintBottom_toTopOf="@+id/park_party_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_party_button" />
 
     <Button
         android:id="@+id/home_party_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/home_party_theme"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="84dp" />
+        app:layout_constraintBottom_toTopOf="@+id/exam_party_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_type_of_party" />
 
     <Button
         android:id="@+id/park_party_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/park_party_theme"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toTopOf="@+id/new_year_party_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exam_party_button" />
+
+    <TextView
+        android:id="@+id/what_type_of_party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/what_type_of_party"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
