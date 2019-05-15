@@ -23,27 +23,29 @@ public class PartyTheme extends AppCompatActivity {
         park_party_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent test = new Intent (PartyTheme.this, MainActivity.class);
-                startActivity(test);
+                Intent park = new Intent (PartyTheme.this, MainActivity.class);
+                startActivity(park);
             }
         });
-
         new_year_party_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.exit(1);
+                Intent new_year = new Intent (PartyTheme.this, MainActivity.class);
+                startActivity(new_year);
             }
         });
         exam_party_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.exit(1);
+                Intent exam = new Intent (PartyTheme.this, MainActivity.class);
+                startActivity(exam);
             }
         });
         home_party_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.exit(1);
+                Intent home = new Intent (PartyTheme.this, MainActivity.class);
+                startActivity(home);
             }
         });
     }
