@@ -4,5 +4,6 @@
   <string name="yes_answer">JA</string>
   <string name="no_answer">NEJ</string>
   <string name="login_activity">SystemetAppBasic</string>
+  <string name="money_query">Hur mycket pengar vill du handla för?</string>
 
 </resources>
