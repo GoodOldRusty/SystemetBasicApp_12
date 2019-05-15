@@ -4,5 +4,7 @@
   <string name="yes_answer">JA</string>
   <string name="no_answer">NEJ</string>
   <string name="login_activity">SystemetAppBasic</string>
+  <string name="exam_party_theme">Examensfest</string>
+  <string name="home_party_theme">Hemmafest</string>
 
 </resources>

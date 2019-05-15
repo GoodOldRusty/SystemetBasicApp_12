@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".PartyTheme">
 
+    <Button
+        android:id="@+id/exam_party_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exam_party_theme"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <Button
+        android:id="@+id/home_party_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_party_theme"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="84dp" />
 </android.support.constraint.ConstraintLayout>
