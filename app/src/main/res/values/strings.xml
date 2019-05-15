@@ -4,5 +4,7 @@
   <string name="yes_answer">JA</string>
   <string name="no_answer">NEJ</string>
   <string name="login_activity">SystemetAppBasic</string>
+  <string name="park_party_theme">Parkhäng</string>
+  <string name="new_year_party_theme">Nyår</string>
 
 </resources>

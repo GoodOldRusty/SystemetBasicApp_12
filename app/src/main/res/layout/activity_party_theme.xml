@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".PartyTheme">
 
+    <Button
+        android:id="@+id/park_party_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/park_party_theme"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/new_year_party_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_year_party_theme"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="446dp" />
 </android.support.constraint.ConstraintLayout>
