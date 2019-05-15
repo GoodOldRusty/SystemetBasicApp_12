@@ -23,5 +23,14 @@
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="375dp" />
 
+    <Button
+        android:id="@+id/ok_answer"
+        android:layout_width="75dp"
+        android:layout_height="47dp"
+        android:text="@string/ok_answer"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+
 </android.support.constraint.ConstraintLayout>
 
