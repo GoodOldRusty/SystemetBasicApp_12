@@ -12,26 +12,19 @@ public class MoneyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_money);
 
 
-        Button yesButton = findViewById(R.id.yes_button);
-        Button noButton = findViewById(R.id.no_button);
+        Button okButton = findViewById(R.id.ok_answer);
 
-        yesButton.setOnClickListener(new View.OnClickListener() {
+
+        okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             Intent test = new Intent (MoneyActivity.this, MainActivity.class);
             startActivity(test);
             }
         });
-
-        noButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.exit(1);
-            }
-        });
-
+        
     }
 }
