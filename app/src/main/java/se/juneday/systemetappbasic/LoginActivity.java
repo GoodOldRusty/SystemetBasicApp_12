@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         yesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            Intent test = new Intent (LoginActivity.this, MainActivity.class);
+            Intent test = new Intent (LoginActivity.this, PartyActivity.class);
             startActivity(test);
             }
         });
