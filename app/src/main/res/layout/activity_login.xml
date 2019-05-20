@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundLightRed"
+    android:background="@color/colorPrimaryDark"
     tools:context=".LoginActivity">
 
     <!-- <TextView
@@ -30,9 +30,9 @@
         android:layout_height="56dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="240dp"
-        android:background="@color/backgroundLightRed"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/yes_answer"
-        android:textColor="@color/textDarkGreen"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -46,9 +46,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="352dp"
-        android:background="@color/backgroundLightRed"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/no_answer"
-        android:textColor="@color/textDarkRed"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.972"
