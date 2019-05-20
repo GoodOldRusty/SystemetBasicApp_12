@@ -1,8 +1,8 @@
 <resources>
   <string name="app_name"></string>
-  <string name="age_control">Är du 20 år eller äldre?</string>
-  <string name="yes_answer">JA</string>
-  <string name="no_answer">NEJ</string>
+    <!--  <string name="age_control">Är du 20 år eller äldre?</string> -->
+  <string name="yes_answer">Jag är 20 år (eller mer)</string>
+  <string name="no_answer">Jag har inte fyllt 20 år</string>
   <string name="login_activity"></string>
   <string name="what_type_of_party">Vilken tillställning skall du på?</string>
   <string name="money_query">Hur mycket pengar vill du handla för?</string>
