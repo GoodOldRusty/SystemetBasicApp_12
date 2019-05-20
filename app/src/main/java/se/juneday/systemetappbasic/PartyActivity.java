@@ -24,6 +24,7 @@ public class PartyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent park = new Intent (PartyActivity.this, MoneyActivity.class);
+
                 startActivity(park);
             }
         });
