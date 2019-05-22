@@ -7,6 +7,18 @@
     android:background="@color/colorPrimary"
     tools:context=".PartyActivity">
 
+    <TextView
+        android:id="@+id/what_type_of_party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="@font/futura_bold_font"
+        android:text="@string/what_type_of_party"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/new_year_party_button"
@@ -18,9 +30,10 @@
         android:background="@color/colorPrimary"
         android:text="@string/new_year_party_theme"
         android:textAlignment="viewStart"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#482f40"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/futura_bold_font"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/park_party_button"
@@ -35,9 +48,10 @@
         android:background="@color/colorPrimary"
         android:text="@string/exam_party_theme"
         android:textAlignment="viewStart"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#482f40"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/futura_bold_font"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_party_button" />
 
@@ -50,9 +64,10 @@
         android:background="@color/colorPrimary"
         android:text="@string/home_party_theme"
         android:textAlignment="viewStart"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#482f40"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/futura_bold_font"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/what_type_of_party" />
 
@@ -65,23 +80,76 @@
         android:background="@color/colorPrimary"
         android:text="@string/park_party_theme"
         android:textAlignment="viewStart"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#482f40"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/futura_bold_font"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exam_party_button" />
 
-    <TextView
-        android:id="@+id/what_type_of_party"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="4dp"
-        android:text="@string/what_type_of_party"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="home_icon"
+        app:layout_constraintEnd_toStartOf="@+id/home_party_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_type_of_party"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="park_icon"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/park_party_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_type_of_party"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/park" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="newyear_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/new_year_party_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_type_of_party"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/fireworks" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="graduation_icon"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/exam_party_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_type_of_party"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/graduation2" />
 
 </android.support.constraint.ConstraintLayout>
