@@ -5,5 +5,5 @@
     android:id="@+id/action_search"
     android:title="Search">
   </item>
-
+<!--om search-fältet flyttas så måste även detta uppdateras (tas bort till förmån för layouten-->
 </menu>
