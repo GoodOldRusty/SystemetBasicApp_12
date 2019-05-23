@@ -1,11 +1,11 @@
 <resources>
   <string name="app_name"></string>
     <!--  <string name="age_control">Är du 20 år eller äldre?</string> -->
-  <string name="yes_answer">Jag är 20 år (eller mer)</string>
-  <string name="no_answer">Jag har inte fyllt 20 år</string>
+  <string name="yes_answer">jag är 20 år (eller mer)</string>
+  <string name="no_answer">jag har inte fyllt 20 år</string>
   <string name="login_activity"></string>
-  <string name="what_type_of_party">Var ska du festa?</string>
-  <string name="money_query">Hur mycket pengar vill du handla för?</string>
+  <string name="what_type_of_party">var ska du festa?</string>
+  <string name="money_query">hur mycket vill du spendera?</string>
   <string name="ok_answer">Sök</string>
   <string name="park_party_theme">i parken</string>
   <string name="new_year_party_theme">på nyårsfest</string>

@@ -4,23 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/money_query"
-        android:layout_width="238dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="338dp"
-        android:layout_marginBottom="355dp"
+        android:layout_width="312dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="577dp"
+        android:fontFamily="@font/futura_medium_bt"
         android:text="@string/money_query"
+        android:textColor="#482f40"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/max_alco_input"
+        android:id="@+id/max_price_input"
         android:layout_width="257dp"
         android:layout_height="52dp"
         android:layout_marginTop="376dp"
@@ -45,7 +51,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/max_alco_input"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </android.support.constraint.ConstraintLayout>
