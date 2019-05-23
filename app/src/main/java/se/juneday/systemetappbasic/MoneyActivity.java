@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class MoneyActivity extends AppCompatActivity {
@@ -15,16 +16,16 @@ public class MoneyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_money);
 
 
-        Button okButton = findViewById(R.id.ok_answer);
 
+        ImageButton okgoButton = findViewById(R.id.okgoButton);
 
-        okButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            Intent test = new Intent (MoneyActivity.this, MainActivity.class);
-            startActivity(test);
-            }
-        });
+                okgoButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent test = new Intent(MoneyActivity.this, MainActivity.class);
+                        startActivity(test);
+                    }
         
-    }
+    });
+}
 }
